@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+ 
+        nav {
+            background-color: #15305d;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+ 
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+ 
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+ 
+        nav ul li {
+            margin: 0 15px;
+        }
+ 
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+ 
+        nav ul li a:hover {
+            color: goldenrod;
+        }
+ 
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+ 
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+ 
+        #about p, #about h3, #resources h3 {
+            color: white;
+        }
+ 
+        .interactive-button {
+            background-color: goldenrod;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+ 
+        .interactive-button:hover {
+            background-color: #ffcc00;
+            color: #15305d;
+        }
+ 
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+ 
+        .contact-container input, .contact-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+ 
+        .contact-container button {
+            background-color: goldenrod;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+ 
+        .contact-container button:hover {
+            background-color: #ffcc00;
+            color: #15305d;
+        }
+    </style>
+ 
+<body>
+    <nav>
+        <div class="logo">Coding Club</div>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="Event.html">Events</a></li>
+            <li><a href="Cont.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+   
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+ 
+        body {
+            background-color: #f4f6f9; /* Light Gray Background */
+            color: #333;
+            line-height: 1.6;
+        }
+ 
+       
+       
+ 
+        /* Main Container */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+ 
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+ 
+        /* Section Styling */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 5px solid #1e3a8a;
+            background: #f8f9fc;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+ 
+        .section:hover {
+            background: #e3e6f0;
+        }
+ 
+        .section h3 {
+            color: #15305d;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+ 
+        /* Grid Layout for Projects & Resources */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+ 
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+ 
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 6px 12px rgba(244, 229, 31, 0.15);
+        }
+ 
+        .card h4 {
+            color: #0d47a1;
+            margin-bottom: 10px;
+        }
+ 
+        .card p {
+            font-size: 15px;
+            color: #555;
+        }
+ 
+        .links {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1e3a8a;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+ 
+        .links:hover {
+            color: #ff6f00;
+            text-decoration: underline;
+        }
+ 
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1e3a8a;
+            color: white;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+ 
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+ 
+            h2 {
+                font-size: 24px;
+            }
+ 
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+ 
+    <div class="container">
+        <h2>Explore Our Resources & Projects</h2>
+       
+        <!-- Projects Section -->
+        <div class="section">
+            <h3>Member Projects</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>Project Title</h4>
+                    <p>Brief description of the project.</p>
+                    <a href="#" target="_blank" class="links">View on GitHub</a>
+                </div>
+                <div class="card">
+                    <h4>Another Project</h4>
+                    <p>Brief description of another project.</p>
+                    <a href="#" target="_blank" class="links">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Coding Resources Section -->
+        <div class="section">
+            <h3>Coding Resources</h3>
+            <div class="grid">
+                <div class="card">
+                    <h4>FreeCodeCamp</h4>
+                    <p>Learn coding for free with interactive exercises.</p>
+                    <a href="https://www.freecodecamp.org" target="_blank" class="links">Visit</a>
+                </div>
+                <div class="card">
+                    <h4>Harvard CS50</h4>
+                    <p>A great introduction to coding
+</div>
+ 
